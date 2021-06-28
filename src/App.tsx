@@ -129,9 +129,9 @@ function App() {
   ]);
 
   return (
-    <div className="App bg-gray-50 p-20 h-screen">
-      <div className="container m-auto flex flex-row">
-          <div className="rounded-lg p-6 w-full bg-gray-200">
+    <div className="App bg-gray-50 p-10 lg:p-20 h-screen">
+      <div className="container m-auto flex flex-col lg:flex-row">
+          <div className="rounded-lg p-6 w-full bg-gray-200 mb-5 lg:mb-0">
             { step < steps.length ?
                 <div>
                   <h3 className="font-bold text-md">Guessing your username ({step + 1}/{steps.length})</h3>
@@ -151,7 +151,7 @@ function App() {
                 </div>
             }
           </div>
-          <div className="rounded-lg p-6 w-full bg-gray-200 ml-3">
+          <div className="rounded-lg p-6 w-full bg-gray-200 lg:ml-3">
             <h3 className="font-bold text-md">Log in</h3>
             <form id="fakeForm">
               <label className="text-semibold block text-left" htmlFor="username">Username</label>
