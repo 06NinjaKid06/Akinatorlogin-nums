@@ -16,7 +16,7 @@ interface Step {
   handlerNo: (val: any) => void,
 }
 
-const alphabet: Array<string> = "abcdefghijklmnopqrstuvwxyz".split("")
+const alphabet: Array<string> = "0123456789abcdefghijklmnopqrstuvwxyz+×÷=/_<>[]!@#$%^&*()-':;,?.`~{}€£¥₩°•○●□■♤♡◇♧☆▪︎¤《》¡¿".split("")
 
 function App() {
   const [step, setStep] = useState(0)
